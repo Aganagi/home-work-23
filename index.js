@@ -10,7 +10,7 @@ console.log(cumle("bizim gozel vetenimizde gunes cixib"));
 
 //2ci-------------------------------------------------------
 const palindrom = (str) => {
-  let word = str.toLowerCase().replace("/[W_]/g", "");
+  let word = str.toLowerCase().replace("", "");
 
   let res = word.split("").reverse().join("");
 
