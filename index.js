@@ -38,12 +38,12 @@ let meaning = false;
 let result = myFunction(modifyString, "o", true);
 console.log(result);
 //3cu- 2ci metodu------------------------------------------
-// const newFunction = (str, letter, boo) => {
-//   let result = "";
-//   let text = str.toLowerCase();
-//   for (let i of text) {
-//     i === letter && boo ? (result += i.toUpperCase()) : (result += i);
-//   }
-//   console.log(result);
-// };
-// newFunction("Johe Doe", "e", true);
+const newFunction = (str, letter, boo) => {
+  let result = "";
+  let text = str.toLowerCase();
+  for (let i of text) {
+    i === letter && boo ? (result += i.toUpperCase()) : (result += i);
+  }
+  console.log(result);
+};
+newFunction("Johe Doe", "e", true);
