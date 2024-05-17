@@ -32,18 +32,8 @@ const myFunction = (str, second, third) => {
   }
   return someText;
 };
-let modifyString = "JOhn doe";
-let letter = "h";
-let meaning = false;
-let result = myFunction(modifyString, "o", true);
-console.log(result);
-//3cu- 2ci metodu------------------------------------------
-const newFunction = (str, letter, boo) => {
-  let result = "";
-  let text = str.toLowerCase();
-  for (let i of text) {
-    i === letter && boo ? (result += i.toUpperCase()) : (result += i);
-  }
-  console.log(result);
-};
-newFunction("Johe Doe", "e", true);
+// let modifyString = "Johne Doe";
+// let letter = "h";
+// let meaning = true;
+// let result = myFunction(modifyString, letter, meaning);
+console.log(myFunction("John Doe", "e", true));
