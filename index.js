@@ -10,15 +10,16 @@ console.log(cumle("bizim gozel vetenimizde gunes cixib"));
 
 //2ci-------------------------------------------------------
 const palindrom = (str) => {
-  let word = str.toLowerCase().replace("/[W_]/g", "");
+  let word = str.toLowerCase().replace("", "");
 
   let res = word.split("").reverse().join("");
 
   return word === res;
 };
 
-console.log(palindrom("Ana"));
+console.log(palindrom("qalAq"));
 //3cu--------------------------------------------------
+
 const myFunction = (str, second, third) => {
   let someText = "";
   for (let i = 0; i < str.length; i++) {
@@ -31,8 +32,18 @@ const myFunction = (str, second, third) => {
   }
   return someText;
 };
-let modifyString = "john doe";
+let modifyString = "JOhn doe";
 let letter = "h";
-let meaning = true;
-let result = myFunction(modifyString, letter, meaning);
+let meaning = false;
+let result = myFunction(modifyString, "o", true);
 console.log(result);
+//3cu- 2ci metodu------------------------------------------
+// const newFunction = (str, letter, boo) => {
+//   let result = "";
+//   let text = str.toLowerCase();
+//   for (let i of text) {
+//     i === letter && boo ? (result += i.toUpperCase()) : (result += i);
+//   }
+//   console.log(result);
+// };
+// newFunction("Johe Doe", "e", true);
